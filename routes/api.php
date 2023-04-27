@@ -24,3 +24,5 @@ Route::get('posts', [PostController::class, 'index'])->middleware(['auth:sanctum
 Route::get('posts/{id}', [PostController::class, 'show'])->middleware(['auth:sanctum']);
 
 Route::post('login', [AuthenticationController::class, 'login']);
+Route::get('logout', [AuthenticationController::class, 'logout'])->middleware(['auth:sanctum']);
+Route::get('logged-in-user', [AuthenticationController::class, 'loggedInUser'])->middleware(['auth:sanctum']);
