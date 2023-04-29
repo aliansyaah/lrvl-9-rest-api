@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
             ],
             [
                 'email' => 'bagyo@admin.com',
-                'username' => Str::random(10),
+                'username' => 'bagyo',
                 'password' => Hash::make('12345'),
                 'firstname' => 'Subagyo',
                 'lastname' => Str::random(10),
@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
             ],
             [
                 'email' => 'epul@admin.com',
-                'username' => Str::random(10),
+                'username' => 'epul',
                 'password' => Hash::make('12345'),
                 'firstname' => 'Saepul',
                 'lastname' => Str::random(10),
