@@ -21,7 +21,7 @@ class PostDetailResource extends JsonResource
             'news_content' => $this->news_content,
             'created_at' => date_format($this->created_at, "Y/m/d H:i:s"),
             'author' => $this->author,
-            'writer' => $this->whenLoaded('writer')     // utk menandakan "hanya munculkan jika dipanggil" ( ith('writer:id,username') )
+            'writer' => $this->whenLoaded('writer')     // utk menandakan "hanya munculkan jika dipanggil" ( with('writer:id,username') )
         ];
     }
 }
